@@ -12,7 +12,7 @@ onload=function(){
     callback:function(){
       b.innerHTML+="<div>ok zip.js has been embedded it Now I'll get jQuery.zip its size is: 28.7kb, uncompress it and embed it into head"
       zipFs=new zip.fs.FS()
-      zip.workerScriptsPath='../../lbs/'
+      zip.workerScriptsPath='js/'
       zipFs.importHttpContent(
         z.file,
         0,//false because I don't need ...
@@ -28,7 +28,7 @@ onload=function(){
     init:function(f){
       z.file=f
       z.new({
-        src:'../../lbs/zip.js',
+        src:'js/zip.js',
         cb:z.callback})}}
   console.clear()
   z.init('js/jQuery.zip')}
