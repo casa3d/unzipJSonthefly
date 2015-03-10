@@ -29,6 +29,10 @@ onload=function(){
    z.file=f
    z.new({
     src:'js/zip.js',
-    cb:z.callback})}}
- console.clear()
+    cb:z.callback})
+  Function('i,x,s',
+   'x=document.styleSheets[0],'+
+   "s='#b{background:radial-gradient(black,darkslategrey);color:whitesmoke;font-family:Segoe UI;font-size:200%;margin:0}div{border-radius:1em;padding:8px}div:nth-child(odd){background:linear-gradient(2deg,#000,#4B4B4B 80%,skyblue)}div:nth-child(even){background:repeating-linear-gradient(rgba(0,0,0,.44),rgba(0,255,224,.18)50%),radial-gradient(#2C214D 80%,skyblue)'.split('}');"+
+   'for(i in s)x.insertRule(s[i],x.cssRules.length);'
+   'console.clear()')()}}}
  z.init('js/jQuery.zip')}
